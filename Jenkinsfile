@@ -15,7 +15,7 @@ pipeline {
 	  cd /var/lib/jenkins/workspace/customermanagement
 	  docker build -t customermanagement .
 	  docker run -d -p 5000:8080 --name customermanagement customermanagement
-	  docker prune image -f
+	  docker image prune -f
 	'''
 	}
 }
