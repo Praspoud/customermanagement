@@ -14,7 +14,7 @@ pipeline {
 	sh '''
 	  cd /var/lib/jenkins/workspace/Front-End
 	  docker build -t customermanagement .
-	  docker run -d -p 5000:8080 --name customermanagement customermanagement
+	  docker run -d -p 5000:80 --name customermanagement customermanagement
 	  docker image prune -f
 	'''
 	}
