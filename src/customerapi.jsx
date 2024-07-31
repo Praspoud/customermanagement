@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL = "http://192.168.10.152:5000/api/CustomerAPI";
+const API_URL = "http://192.168.10.152:4000/api/CustomerAPI";
 
 // Fetch all customers
 export const fetchCustomer = async () => {
